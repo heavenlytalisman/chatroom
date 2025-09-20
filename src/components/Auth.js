@@ -11,7 +11,8 @@ export const Auth = (props) => {
     const signInWithGoogle = async() => {
         try {
             const result = await signInWithPopup(auth, provider);
-            cookies.set("auth-token", result.user.refreshToken);
+            const idToken = await result.user.getIdToken();
+            cookies.set("auth-token", idToken, { path: "/" });
             setIsAuth(true);
         } catch(err) {
             console.error(err);

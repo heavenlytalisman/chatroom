@@ -24,7 +24,7 @@ export const Chat = (props) => {
         });
 
         return () => unsubscribe();
-    }, []);
+    }, [room, messageRef]);
 
     const handleSubmit = async(e) => {
         e.preventDefault();

@@ -10,7 +10,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyBOre33gkmJBwwrDtOQdBOzVGqJXnneBCI",
   authDomain: "chatroom-2495d.firebaseapp.com",
   projectId: "chatroom-2495d",
-  storageBucket: "chatroom-2495d.firebasestorage.app",
+  storageBucket: "chatroom-2495d.appspot.com",
   messagingSenderId: "68969405777",
   appId: "1:68969405777:web:42f0c1ea63b519b216c770"
 };
