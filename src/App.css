@@ -209,23 +209,51 @@ div {
   font-family: 'Courier New', Courier, monospace;
 }
 
-
 @media (max-width: 400px) {
   .room,
-  .chat-app {
+  .auth {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 20px auto;
     width: 95%;
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .chat-app {
+    width: 100%;
+    max-width: 100%;
     padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
   }
-  .room label {
-    font-size: 18px;
-  }
+
   .chat-app .header h1 {
     font-size: 18px;
   }
+
+  .room label {
+    font-size: 18px;
+  }
+
   .message .user {
     font-size: 12px;
   }
+
   .new-message-input {
     font-size: 14px;
+  }
+
+  .messages {
+    max-height: 50vh;
+    padding: 8px;
+  }
+
+  .room button,
+  .send-button {
+    font-size: 14px;
+    padding: 8px;
   }
 }
